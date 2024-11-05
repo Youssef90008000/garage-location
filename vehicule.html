@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta content="Location de voiture" property="description" />
+    <meta content="Youssef KOSSAMA" property="author" />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Garage loc vehicule</title>
+    <link href="/public/images/logo.png" rel="icon" type="image/png" />
+    <link href="/public/css/accueil.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="background-color: #1f1f1f">
+    <!-- Titre de la page et icone retour-->
+    <header>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="/public/accueil.html">
+          <img
+            src="/public/images/icon.ico"
+            alt="icone retour"
+            style="width: 32px; height: 32px"
+          />
+        </a>
+        <h1 class="poiret-one text-center p-5" style="color: white">
+          Véhicules disponibles
+        </h1>
+      </div>
+    </header>
+    <main>
+      <!-- Barre de navigation-->
+      <nav
+        class="montserrat d-flex flex-row justify-content-center justify-content-md-center justify-content-lg-around pb-5"
+      >
+        <div>
+          <a
+            class="nav-link dropdown-toggle m-2"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: white"
+            >Marque
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#bmw">BMW</a></li>
+            <li><a class="dropdown-item" href="#mercedes">Mercedes</a></li>
+            <li><a class="dropdown-item" href="#hybride">Infinity</a></li>
+            <li><a class="dropdown-item" href="#toyota">Toyota</a></li>
+            <li><a class="dropdown-item" href="#electrique">Jaguar</a></li>
+          </ul>
+        </div>
+        <div>
+          <a
+            class="nav-link dropdown-toggle m-2"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: white"
+            >Carburant
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#diesel">Diesel</a></li>
+            <li><a class="dropdown-item" href="#essence">Essence</a></li>
+            <li><a class="dropdown-item" href="#electrique">Electrique</a></li>
+            <li><a class="dropdown-item" href="#hybride">Hybride</a></li>
+          </ul>
+        </div>
+        <div>
+          <a
+            class="nav-link dropdown-toggle m-2"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: white"
+            >Boite
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#automatique">Automatique</a>
+            </li>
+            <li><a class="dropdown-item" href="#manuelle">Manuelle</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- section responsive pour cadre voiture-->
+      <div
+        class="montserrat d-flex flex-wrap flex-column justify-content-around flex-md-row flex-lg-row grid gap-5"
+      >
+        <!-- Voiture numero 1-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            id="bmw"
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-1.jpg"
+              alt="voiture 1"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div class="text-center">
+              <p>BMW -2020</p>
+              <p>Diesel</p>
+              <p>Automatique</p>
+              <p>80€/jours</p>
+              <p>400€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 2-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            id="manuelle"
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-2.jpg"
+              alt="voiture 2"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="essence" class="text-center">
+              <p>BMW -1980</p>
+              <p>Essence</p>
+              <p>Manuelle</p>
+              <p>55€/jours</p>
+              <p>250€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 3-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-3.jpg"
+              alt="voiture 3"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="hybride" class="text-center">
+              <p>Infinity-2022</p>
+              <p>Hybride</p>
+              <p>Automatique</p>
+              <p>90€/jours</p>
+              <p>430€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>  
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 4-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-4.jpg"
+              alt="voiture 4"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="mercedes" class="text-center">
+              <p>Mercedes-2015</p>
+              <p>Essence</p>
+              <p>Manuelle</p>
+              <p>70€/jours</p>
+              <p>380€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div> 
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 5-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-5.jpg"
+              alt="voiture 5"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="diesel" class="text-center">
+              <p>BMW -2013</p>
+              <p>Diesel</p>
+              <p>Manuelle</p>
+              <p>75€/jours</p>
+              <p>390€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 6-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-6.jpg"
+              alt="voiture 6"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="toyota" class="text-center">
+              <p>Toyota-2021</p>
+              <p>Essence</p>
+              <p>Manuelle</p>
+              <p>100€/jours</p>
+              <p>500€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 7-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-7.jpg"
+              alt="voiture 7"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="electrique" class="text-center">
+              <p>Jaguar-2019</p>
+              <p>Electrique</p>
+              <p>Automatique</p>
+              <p>110€/jours</p>
+              <p>520€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+        <!-- Voiture numero 8-->
+        <div
+          class="card md-flex-wrap border-4 border-warning col-12 col-md-5 col-lg-5"
+          style="background-image: linear-gradient(#fff, #7c7c7c)"
+        >
+          <div
+            class="d-flex justify-content-around align-items-center flex-column flex-md-wrap flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/vehicules/car-8.jpg"
+              alt="voiture 2"
+              style="width: 70%"
+              class="align-items-center"
+            />
+            <div id="automatique" class="text-center">
+              <p>BMW -2015</p>
+              <p>Essence</p>
+              <p>Automatique</p>
+              <p>80€/jours</p>
+              <p>400€/semaines</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center align-items-lg-start ms-lg-5"
+          >
+            <p>Disponibilités</p>
+            <div class="d-flex flex-row">
+              <img
+                src="/public/images/chevron-gauche.png"
+                alt="chevron-gauche"
+                style="width: 20px; height: 20px"
+              />
+              <p>Novembre</p>
+              <img
+                src="/public/images/chevron-droit.png"
+                alt="chevron-droit"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <!-- Trait épais sous le texte "Novembre" -->
+          </div>
+          <hr style="border: 3px solid black; width: 100%; margin: 0" />
+          <div
+            class="d-flex flex-column justify-content-around align-items-center flex-md-column flex-lg-row m-2"
+          >
+            <img
+              src="/public/images/calendar.png"
+              style="width: 50%"
+              alt="calendrier"
+              class="mb-2"
+            />
+            <button type="button" class="btn btn-outline-warning m-md-2">
+              Réserver
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="coordonnées">
+        <div class="contacts">
+          <h3>Contacts</h3>
+          <ul>
+            <li>06 50 20 30 65</li>
+            <li>garageloca@mail.com</li>
+          </ul>
+        </div>
+        <div class="adresse">
+          <h3>Adresse</h3>
+          <ul>
+            <li>10 rue de la belleplace</li>
+            <li>17000 La Rochelle</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reseaux">
+        <h3>Réseaux</h3>
+        <ul>
+          <li><img src="/public/images/social-icons/facebook.png" alt="facebook" /></li>
+          <li><img src="/public/images/social-icons/instagram.png" alt="instagram" /></li>
+          <li><img src="/public/images/social-icons/linkedin.png" alt="linkedin" /></li>
+          <li><img src="/public/images/social-icons/twitter.png" alt="twitter" /></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

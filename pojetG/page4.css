@@ -1,0 +1,53 @@
+body {
+  color: white;
+  background: linear-gradient(209.38deg, #1f1f1f 55%, #ffc107 93.97%);
+}
+img {
+  width: 40px;
+  height: 40px;
+}
+.form-group1 {
+  width: 10%;
+}
+.form-group2 {
+  width: 90%;
+}
+.form-group3 {
+  width: 25%;
+}
+.form-group4 {
+  width: 75%;
+}
+
+.adresse .contacts .reseaux {
+  width: 30%;
+}
+footer {
+  margin-top: 50px;
+  border-top: solid white 1px;
+}
+@media screen and (max-width: 576px) {
+  #A {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  #A {
+    width: 82%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #A {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #A {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #A {
+    width: 32%;
+  }
+}
